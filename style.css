@@ -1,0 +1,77 @@
+/* Body */
+body {
+    background-color: gainsboro;
+}
+
+/* Header */
+h1 {
+    color: #798645;
+    text-align: center;
+}
+
+#profil>h3 {
+    background-color: #A0D683;
+    text-align: center;
+}
+
+#beternak>a>h3 {
+    background-color: #A0D683;
+    text-align: center;
+}
+
+#header {
+    background-color: #A0D683;
+    height: 150px;
+    padding: 10px;
+}
+
+.desk {
+    text-align: center;
+    background-color: darkseagreen;
+}
+
+#soekarno {
+    font-weight: 600;
+}
+
+.menu li {
+    display: inline;
+    margin: 40px;
+}
+
+.menu a {
+    margin-left: 200px;
+}
+
+.menu a:hover {
+    font-weight: bold;
+    color: #821131;
+}
+
+.gambar {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.isi::first-letter {
+    color: #557C56;
+    font-size: 40px;
+}
+
+.koleksi {
+    display: flex;
+    height: 200px;
+}
+
+.harga {
+    text-align: center;
+    color: maroon;
+}
+
+.promo {
+    border: 2px dotted;
+    margin-top: 10px;
+    padding: 10px;
+}
