@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pemesanan Barang</title>
+    </head>
+    <body>
+        <form method="post" action="Praktikum3hasilformbarang.html" target="_self">
+         <div>
+            <table pading="9" style="text-align: center;" width="500">
+                <th>Beranda</th>
+                <th>|</th>
+                <th>Hasil Pencarian</th>
+                <th>|</th>
+                <th>Riwayat Transaksi</th>
+                <th>|</th>
+                <th>Keluar</th>
+            </table>
+         </div>
+         <hr style="border-color: darkviolet;">
+
+         <img src="img/MSI-TITAN-GT77.png" alt="Gambar Laptop 1" width="200">
+         <img src="img/kv-laptop.png" alt="Gambar Laptop 2" width="200">
+
+         <br><br>
+         <h3>MSI-TITAN-GT77</h3>
+         <h4>RP. 65.000.000,00</h4>
+
+         <fieldset>
+         <h4>Spesifikasi :</h4>
+         <ul>
+            <li>Processor : Intel® Core™ i9-13980HX Processor 36M Cache, up to 5.60 GHz"
+            <li>OS : Windows 11 Pro</li>
+            <li>Graphics : NVIDIA GeForce RTX 4080 GDDR6 12GB, Up to 2280MHz Boost Clock 175W Maximum Graphics Power with Dynamic Boost. *May vary by scenario, *Full-Power GPU Design</li>
+            <li>Memory : 64GB DDR5 (32GB x 2), 4 Slots, Max 128GB</li>
+            <li>Storage : 4TB NVMe PCIe SSD - up to 6TB</li>
+            <li>Display : 17.3" UHD(3840x2160), 144Hz, Mini LED, HDR 1000, 100% DCI-P3, IPS-Level panel</li>
+            <li>Keyboard : Cherry Mechanical Per-Key RGB gaming keyboard by SteelSeries</li>
+            <li>Comunication : Intel Killer Wi-Fi 6E AX1675, Bluetooth v5.2</li>
+         </ul>
+         </fieldset>
+         
+         <br>
+         <label for="account_number">Nomor Rekening: </label>
+         <input type="number" name="account_number" id="account_number" value="0987654321" required>
+
+         <br>
+         <p>Bank:
+         <select>
+            <option>BNI</option>
+            <option>BCA</option>
+            <option selected>Mandiri</option>
+            <option>BSI</option>
+         </select>
+         </p>
+
+         <label for="account_holder">Nama: </label>
+         <input type="text" name="account_holder" id="account_holder" value="Shaany Funy" required>
+
+         <p>Transaksi:
+            <select name="number" id="number">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+                <br><em>*jika transaksi untuk 3 orang, pilih 3 dari list di atas</em>
+         </p>
+         
+         <input type="checkbox" name="send[]" id="send1" value="Kirim ke Nomor Ponsel" checked>
+            <label for="send1">Kirim ke Nomor Ponsel</label>
+         
+         <br>
+         <input type="checkbox" name="send[]" id="send2" value="Kirim ke Email" checked>
+            <label for="send2">Kirim ke Email</label>
+        
+         <br><br>
+         <label for="noponsel">Kirim ke Nomor Ponsel:</label>
+           <input type="number" name="noponsel" id="noponsel" value="6213456789" required>
+            
+         <br><br>
+         <label for="email">Kirim ke Email:</label>
+           <input type="email" name="email" id="email" value="shaany5funy@gmail.com" required>
+         
+         <br><br>
+
+         <input type="submit" value="Selesaikan Pesanan" style="background-color:green">
+        </form>
+    </body>
+</html>

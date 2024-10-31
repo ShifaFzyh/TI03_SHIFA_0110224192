@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <title> Form Pemesanan Pizza </title>
+    </head>
+    <body>
+        <h1>Freedy Fast Bear Pizza | Pizza sesuai selera</h1>
+        <hr>
+        <p>Freedy Fast Bear Pizza kini tersedia untuk pemesanan online. Kreasikan pizza anda dan kami akan mengirimnya dengan cepat kerumah anda.</p>
+            <fieldset>
+            <legend>Informasi Anda:</legend>
+        
+            <br>
+        <form action="http://blackgoosebistro.com/pizza.php" method="POST">
+            <label for="customername">Nama: </label>
+            <input type="text" name="customername" id="customername" required autofocus>
+
+            <br><br>
+            <label for="address">Alamat: </label>
+            <input type="text" name="address" id="address" required>
+
+            <br><br>
+            <label for="telephone">Nomor Handphone: </label>
+            <input type="number" name="telephone" id="telephone" required>
+
+            <br><br>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required>
+
+            <br><br>
+            <label for="instructions">Deskripsi Pemesanan:</label><br>
+            <textarea name="instructions" id="instructions" placeholder="Tidak boleh lebih dari 400 karakter" maxlength="400" cols="30" rows="5" required></textarea>
+            </fieldset>
+
+        <h3>Kreasikan Pizza Kesukaan Anda :</h3>
+       
+            <fieldset>
+            <legend>Jenis Pizza</legend>
+            
+            <fieldset>
+            <legend>Lapisan <em>(pilih satu)</em> :</legend>
+            <input type="radio" name="crust" id="crust1" value="Original" required>
+            <label for="crust1">Original</label>
+            <br>
+            <input type="radio" name="crust" id="crust2" value="Gandum" required>
+            <label for="crust2">Gandum</label>
+            <br>
+            <input type="radio" name="crust" id="crust3" value="Keju" required>
+            <label for="crust3">Keju</label>
+            <br>
+            <input type="radio" name="crust" id="crust4" value="Bebas Gluten" required>
+            <label for="crust4">Bebas Gluten</label>
+            <br>
+            </fieldset>
+
+            <br>
+            <fieldset>
+            <legend>Topping <em>(bisa lebih dari satu)</em></legend>
+            <input type="checkbox" name="toppings[]" id="toppings1" value="Saus Cabe" checked>
+            <label for="toppings1">Saus Cabe</label>
+            <br>
+
+            <input type="checkbox" name="toppings[]" id="toppings2" value="Bawang Bombay">
+            <label for="toppings2">Bawang Bombay</label>
+            <br>
+
+            <input type="checkbox" name="toppings[]" id="toppings3" value="Daging Sapi">
+            <label for="toppings3">Daging Sapi</label>
+            <br>
+
+            <input type="checkbox" name="toppings[]" id="toppings4" value="Daging Ayam">
+            <label for="toppings4">Daging Ayam</label>
+            <br>
+
+            <input type="checkbox" name="toppings[]" id="toppings5" value="Jamur">
+            <label for="toppings5">Jamur</label>
+            <br>
+
+            <input type="checkbox" name="toppings[]" id="toppings6" value="Keju Mozarella">
+            <label for="toppings6">Keju Mozarella</label>
+            </fieldset>
+
+            </fieldset>
+            <br><br>
+            <label for="number">Jumlah Pizza</label>
+            <select name="number" id="number">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Pesan Sekarang!!">
+            <input type="reset" value="Reset">
+        
+        </form>
+    </body>
+</html>
