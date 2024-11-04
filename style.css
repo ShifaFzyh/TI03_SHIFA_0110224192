@@ -1,77 +1,37 @@
-/* Body */
 body {
-    background-color: gainsboro;
+    background-color: #B99470;
 }
 
-/* Header */
 h1 {
-    color: #798645;
     text-align: center;
+    color: #3E3232;
 }
 
-#profil>h3 {
-    background-color: #A0D683;
-    text-align: center;
-}
-
-#beternak>a>h3 {
-    background-color: #A0D683;
-    text-align: center;
-}
-
-#header {
-    background-color: #A0D683;
-    height: 150px;
-    padding: 10px;
-}
-
-.desk {
-    text-align: center;
-    background-color: darkseagreen;
-}
-
-#soekarno {
-    font-weight: 600;
-}
-
-.menu li {
-    display: inline;
-    margin: 40px;
-}
-
-.menu a {
-    margin-left: 200px;
-}
-
-.menu a:hover {
-    font-weight: bold;
-    color: #821131;
-}
-
-.gambar {
-    height: 200px;
+.container {
     display: flex;
-    justify-content: center;
-    padding: 5px;
+    border-color: rgb(118, 152, 216) lightblue darkcyan cyan;
+    float: left;
 }
 
-.isi::first-letter {
-    color: #557C56;
-    font-size: 40px;
+.item-1 {
+    background-color: #F8F4E1;
 }
 
-.koleksi {
-    display: flex;
-    height: 200px;
+.item-2 {
+    background-color: #AF8F6F;
 }
 
-.harga {
-    text-align: center;
-    color: maroon;
+.item-3 {
+    background-color: #74512D;
 }
 
-.promo {
-    border: 2px dotted;
-    margin-top: 10px;
-    padding: 10px;
+.item-4 {
+    background-color: #543310;
+}
+
+.kotak {
+    height: 670px;
+    width: 200px;
+    border: solid;
+    margin-left: 50px;
 }
